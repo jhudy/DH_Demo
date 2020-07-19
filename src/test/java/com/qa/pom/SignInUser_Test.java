@@ -13,6 +13,9 @@ public class SignInUser_Test {
     private String url;
     SignInUser_Page signInUser_page;
 
+    String userName = "jhu.de.ro@gmial.com";
+    String password = "12345J";
+
     @Before
     public void setUp() throws InterruptedException {
         url="http://automationpractice.com/index.php";
@@ -28,8 +31,8 @@ public class SignInUser_Test {
     }
 
     @Test
-    public void testSignInUserPOM() throws InterruptedException {
-        signInUser_page.signInUser();
+    public void succesLogin() throws InterruptedException {
+        signInUser_page.signInUser(userName,password);
         Thread.sleep(5000);
         assertEquals("Ju DE", signInUser_page.signInUserNameAccount());
     }

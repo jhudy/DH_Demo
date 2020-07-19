@@ -20,13 +20,12 @@ public class SignInUser_Page extends Base {
         super(driver);
     }
 
-    public void signInUser() throws InterruptedException {
+    public void signInUser(String userName, String password) throws InterruptedException {
         click(signInLinkLocator);
         Thread.sleep(2000);
         if(isDisplayed(signInPageLocator)){
-          type("jhu.de.ro@gmial.com",emailLocator);
-          type("12345J",passwordLocator);
-
+          type(userName,emailLocator);
+          type(password,passwordLocator);
           click(signInButtonLocator);
         } else {
             System.out.println("SignIn Page was not found");

@@ -10,6 +10,14 @@ import java.util.List;
 public class Base {
     private WebDriver driver;
 
+    By signInLinkLocator = By.className("login");
+    By emailLocator = By.id("email");
+    By passwordLocator = By.id("passwd");
+    By signInButtonLocator = By.id("SubmitLogin");
+    By signInPageLocator = By.xpath("//h1[@class='page-heading'][contains(.,'Authentication')]");
+    By accountLocator = By.cssSelector(".account > span");
+
+
     public Base(WebDriver driver){
         this.driver = driver;
     }
@@ -58,5 +66,18 @@ public class Base {
 
     public void visit(String url){
         driver.get(url);
+    }
+
+    public void signInMyStore() throws InterruptedException {
+        click(signInLinkLocator);
+        Thread.sleep(2000);
+        if(isDisplayed(signInPageLocator)){
+            type("jhu.de.ro@gmial.com",emailLocator);
+            type("12345J",passwordLocator);
+
+            click(signInButtonLocator);
+        } else {
+            System.out.println("SignIn Page was not found");
+        }
     }
 }
