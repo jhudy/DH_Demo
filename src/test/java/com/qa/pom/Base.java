@@ -4,11 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
 public class Base {
     private WebDriver driver;
+
+    private WebDriverWait wait;
 
     By signInLinkLocator = By.className("login");
     By emailLocator = By.id("email");
@@ -25,6 +29,7 @@ public class Base {
     public WebDriver ChromeDriverConnection(){
         System.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver/chromedriver.exe");
         driver = new ChromeDriver();
+        this.wait = new WebDriverWait(driver,30);
         return driver;
     }
 
@@ -79,5 +84,12 @@ public class Base {
         } else {
             System.out.println("SignIn Page was not found");
         }
+    }
+
+    public void waitElementVisible(By locator){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+    public void waitElementToBeClickable(By locator){
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 }
