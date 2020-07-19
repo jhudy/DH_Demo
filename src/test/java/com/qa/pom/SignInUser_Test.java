@@ -15,6 +15,7 @@ public class SignInUser_Test {
 
     String userName = "jhu.de.ro@gmial.com";
     String password = "12345J";
+    String invalidUserName = "jhu@mail";
 
     @Before
     public void setUp() throws InterruptedException {

@@ -20,6 +20,9 @@ public class BuyProduct_Page extends Base {
     By searchButtonLocator = By.xpath("//button[contains(.,'Search')]");
     By searchBreadLocator = By.cssSelector(".navigation_page");
 
+    By cartButtonLocator = By.cssSelector(".shopping_cart > a");
+    By cartBreadLocator = By.cssSelector(".navigation_page");
+
     public BuyProduct_Page(WebDriver driver){
         super(driver);
     }
@@ -58,4 +61,8 @@ public class BuyProduct_Page extends Base {
         return getText(searchBreadLocator);
     }
 
+    public String openCart(){
+        click(cartButtonLocator);
+        return getText(cartBreadLocator);
+    }
 }

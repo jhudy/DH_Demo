@@ -44,4 +44,10 @@ public class BuyProduct_Test {
         assertEquals("Search", buyProduct_page.searchProduct(product));
     }
 
+    @Test
+    public void cartOpenAction(){
+
+        assertEquals("Your shopping cart", buyProduct_page.openCart());
+    }
+
 }
