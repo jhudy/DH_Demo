@@ -15,6 +15,8 @@ public class BuyProduct_Test {
 
     BuyProduct_Page buyProduct_page;
 
+    String product = "Blouses";
+
     @Before
     public void setUp() throws InterruptedException {
         url="http://automationpractice.com/index.php";
@@ -34,6 +36,12 @@ public class BuyProduct_Test {
     public void successfulPurchase()throws InterruptedException{
         buyProduct_page.buyProduct();
         assertEquals("Your order on My Store is complete.",buyProduct_page.orderCompleteMessage());
+    }
+
+    @Test
+    public void searchAction(){
+
+        assertEquals("Search", buyProduct_page.searchProduct(product));
     }
 
 }

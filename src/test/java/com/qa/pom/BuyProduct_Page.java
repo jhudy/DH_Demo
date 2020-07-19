@@ -16,6 +16,10 @@ public class BuyProduct_Page extends Base {
     By confirmOrderButtonLocator = By.xpath("//span[contains(.,'I confirm my order')]");
     By orderCompleteLocator = By.xpath("//p[contains(.,'Your order on My Store is complete.')]");
 
+    By searchBoxLocator = By.cssSelector("#search_query_top");
+    By searchButtonLocator = By.xpath("//button[contains(.,'Search')]");
+    By searchBreadLocator = By.cssSelector(".navigation_page");
+
     public BuyProduct_Page(WebDriver driver){
         super(driver);
     }
@@ -46,6 +50,12 @@ public class BuyProduct_Page extends Base {
 
     public String orderCompleteMessage(){
         return getText(orderCompleteLocator);
+    }
+
+    public String searchProduct(String product){
+        type(product,searchBoxLocator);
+        click(searchButtonLocator);
+        return getText(searchBreadLocator);
     }
 
 }

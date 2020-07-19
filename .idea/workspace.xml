@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="80e60a66-122d-4b91-b7c8-600ff6f8ce0c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/pom/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/pom/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,20 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuyProduct_Page.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BuyProduct_Page.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Page.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="59" lean-forward="true" selection-start-line="6" selection-end-line="59" />
+            <state relative-caret-position="253">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuyProduct_Test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BuyProduct_Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="96">
+              <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -110,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/qa/pom/SignInUser_Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qa/pom/SignInUser_Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qa/pom/Base.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Test.java" />
       </list>
     </option>
   </component>
@@ -229,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BuyProduct_Test">
+  <component name="RunManager" selected="JUnit.BuyProduct_Test.searchAction">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -247,6 +248,29 @@
       <option name="MAIN_CLASS_NAME" value="com.qa.pom.BuyProduct_Test" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BuyProduct_Test.searchAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DH_Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.pom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qa.pom" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.pom.BuyProduct_Test" />
+      <option name="METHOD_NAME" value="searchAction" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -320,9 +344,11 @@
     <list>
       <item itemvalue="JUnit.SignInUser_Test" />
       <item itemvalue="JUnit.BuyProduct_Test" />
+      <item itemvalue="JUnit.BuyProduct_Test.searchAction" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BuyProduct_Test.searchAction" />
         <item itemvalue="JUnit.BuyProduct_Test" />
         <item itemvalue="JUnit.SignInUser_Test" />
       </list>
@@ -340,17 +366,11 @@
       <updated>1595098812257</updated>
       <workItem from="1595098822604" duration="887000" />
       <workItem from="1595103434641" duration="22341000" />
-      <workItem from="1595129889873" duration="10442000" />
+      <workItem from="1595129889873" duration="11501000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BuyProduct_Test - 2020.07.19 at 01h 08m 51s.xml">
-      <configuration name="BuyProduct_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BuyProduct_Test - 2020.07.19 at 01h 14m 46s.xml">
-      <configuration name="BuyProduct_Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BuyProduct_Test - 2020.07.19 at 01h 20m 11s.xml">
       <configuration name="BuyProduct_Test" configurationId="JUnit" />
     </history-entry>
@@ -375,9 +395,15 @@
     <history-entry file="BuyProduct_Test - 2020.07.19 at 02h 36m 17s.xml">
       <configuration name="BuyProduct_Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BuyProduct_Test - 2020.07.19 at 02h 42m 24s.xml">
+      <configuration name="BuyProduct_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BuyProduct_Test_searchAction - 2020.07.19 at 02h 47m 40s.xml">
+      <configuration name="BuyProduct_Test.searchAction" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33670000" />
+    <option name="totallyTimeSpent" value="34729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -532,17 +558,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="253">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qa/pom/BuyProduct_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="59" lean-forward="true" selection-start-line="6" selection-end-line="59" />
+        <state relative-caret-position="96">
+          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
         </state>
       </provider>
     </entry>
